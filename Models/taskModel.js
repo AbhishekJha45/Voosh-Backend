@@ -15,7 +15,7 @@ const TaskSchema = mongoose.Schema({
         required: true,
         default: "TODO"
     },
-    createdAt: Date
+    createdAt: { type: Date, default: Date.now }
 }, {
     versionKey: false
 })
